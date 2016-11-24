@@ -20,10 +20,10 @@ extension Uploadable {
         return FIRStorageMetadata()
     }
     
-    static func upload<M: FIRDataModel>(data: Data, entity: M, completion: @escaping (_ url: String) -> Void) {
+    static func upload<T: FIRDataModel>(data: Data, entity: T, completion: @escaping (_ url: String) -> Void) {
         
         let imgUid = NSUUID().uuidString
-        let ref =  Self.storageRef.child("imagens/\(M.className)\(M.autoId)/\(imgUid)")
+        let ref =  Self.storageRef.child("imagens/\(T.className)/\(T.autoId)/\(imgUid)")
         
         let uploadTask = ref.put(data, metadata: metadata) { (metadata, error) in
             
@@ -41,4 +41,4 @@ extension Uploadable {
     }
     
 }
- 
+
