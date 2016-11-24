@@ -22,6 +22,8 @@
 		DA85B4ED1DE7363E00E67A67 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E31DE7363E00E67A67 /* Deletable.swift */; };
 		DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E41DE7363E00E67A67 /* Updatable.swift */; };
 		DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E61DE7363E00E67A67 /* Extensions.swift */; };
+		DA948EFE1DE7899400C49EEF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA948EFD1DE7899400C49EEF /* User.swift */; };
+		DA948F031DE78A2800C49EEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA948F021DE78A2800C49EEF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		DA85B4E31DE7363E00E67A67 /* Deletable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
 		DA85B4E41DE7363E00E67A67 /* Updatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
 		DA85B4E61DE7363E00E67A67 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DA948EFD1DE7899400C49EEF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA948F021DE78A2800C49EEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +100,15 @@
 		DA85B4CA1DE7362900E67A67 /* ActiveRecordFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				DA85B4F11DE7364600E67A67 /* Protocols */,
+				DA948F011DE789AE00C49EEF /* Controllers */,
+				DA948F001DE789A400C49EEF /* Views */,
+				DA948EFF1DE7899E00C49EEF /* Models */,
 				DA85B4E61DE7363E00E67A67 /* Extensions.swift */,
 				DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */,
-				DA85B4CD1DE7362900E67A67 /* ViewController.swift */,
 				DA85B4CF1DE7362900E67A67 /* Main.storyboard */,
 				DA85B4D21DE7362900E67A67 /* Assets.xcassets */,
 				DA85B4D41DE7362900E67A67 /* LaunchScreen.storyboard */,
+				DA948F021DE78A2800C49EEF /* GoogleService-Info.plist */,
 				DA85B4D71DE7362900E67A67 /* Info.plist */,
 			);
 			path = ActiveRecordFirebase;
@@ -121,6 +127,30 @@
 				DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		DA948EFF1DE7899E00C49EEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA85B4F11DE7364600E67A67 /* Protocols */,
+				DA948EFD1DE7899400C49EEF /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DA948F001DE789A400C49EEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DA948F011DE789AE00C49EEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA85B4CD1DE7362900E67A67 /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA85B4D61DE7362900E67A67 /* LaunchScreen.storyboard in Resources */,
+				DA948F031DE78A2800C49EEF /* GoogleService-Info.plist in Resources */,
 				DA85B4D31DE7362900E67A67 /* Assets.xcassets in Resources */,
 				DA85B4D11DE7362900E67A67 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +286,7 @@
 				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,
 				DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */,
 				DA85B4EB1DE7363E00E67A67 /* Readeable.swift in Sources */,
+				DA948EFE1DE7899400C49EEF /* User.swift in Sources */,
 				DA85B4E71DE7363E00E67A67 /* FIRDataModel.swift in Sources */,
 				DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */,
 				DA85B4ED1DE7363E00E67A67 /* Deletable.swift in Sources */,
@@ -423,6 +455,7 @@
 				DA85B4DC1DE7362900E67A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

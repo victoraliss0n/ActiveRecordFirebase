@@ -10,7 +10,6 @@ import Foundation
 protocol Readaeble {
     
     typealias JSON = [String: AnyObject]
-    
     static func asyncAll(completion: @escaping (_ json: JSON) -> Void)
     
 }

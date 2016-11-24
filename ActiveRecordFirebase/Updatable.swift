@@ -6,7 +6,7 @@ import Foundation
 
 
 protocol Updatable {
- 
-    func update(completion: @escaping (_ error: Error?) -> Void)
-
+    
+    func update(id: String, completion: @escaping (_ error: Error?) -> Void)
+    
 }

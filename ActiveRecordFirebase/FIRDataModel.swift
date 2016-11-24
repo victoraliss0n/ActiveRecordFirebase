@@ -9,7 +9,8 @@ import Firebase
 protocol FIRDataModel: ModelType {
     
     typealias Reference = FIRDatabaseReference
-    func setWithDictionary(snapshot: FIRDataSnapshot)
+    
+    init(json: NSDictionary)
     func toAnyObject() -> [String: AnyObject]
     
 }
@@ -18,7 +19,7 @@ protocol FIRDataModel: ModelType {
 extension FIRDataModel {
     
     func save(completion: @escaping (_ error: Error?) -> Void) {
-         Self.reference.child(Self.className).child(Self.autoId).setValue(self.toAnyObject()) { (error, reference) in
+        Self.reference.child(Self.className).child(Self.autoId).setValue(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }
@@ -26,8 +27,8 @@ extension FIRDataModel {
 
 extension FIRDataModel {
     
-    func update(completion: @escaping (_ error: Error?) -> Void) {
-        Self.reference.child(Self.className).child(Self.autoId).updateChildValues(self.toAnyObject()) { (error, reference) in
+    func update(id: String, completion: @escaping (_ error: Error?) -> Void) {
+        Self.reference.child(Self.className).child(id).updateChildValues(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }
