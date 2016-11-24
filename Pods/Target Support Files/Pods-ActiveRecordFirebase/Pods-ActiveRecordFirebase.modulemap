@@ -1,0 +1,6 @@
+framework module Pods_ActiveRecordFirebase {
+  umbrella header "Pods-ActiveRecordFirebase-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E41FE785BFD897AF10FEEC8 /* Pods_ActiveRecordFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */; };
 		DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */; };
 		DA85B4CE1DE7362900E67A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CD1DE7362900E67A67 /* ViewController.swift */; };
 		DA85B4D11DE7362900E67A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4CF1DE7362900E67A67 /* Main.storyboard */; };
 		DA85B4D31DE7362900E67A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D21DE7362900E67A67 /* Assets.xcassets */; };
 		DA85B4D61DE7362900E67A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D41DE7362900E67A67 /* LaunchScreen.storyboard */; };
+		DA85B4E71DE7363E00E67A67 /* FIRDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4DD1DE7363E00E67A67 /* FIRDataModel.swift */; };
+		DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4DE1DE7363E00E67A67 /* ModelType.swift */; };
+		DA85B4E91DE7363E00E67A67 /* Uploadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4DF1DE7363E00E67A67 /* Uploadable.swift */; };
+		DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */; };
+		DA85B4EB1DE7363E00E67A67 /* Readeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E11DE7363E00E67A67 /* Readeable.swift */; };
+		DA85B4EC1DE7363E00E67A67 /* Writeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E21DE7363E00E67A67 /* Writeable.swift */; };
+		DA85B4ED1DE7363E00E67A67 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E31DE7363E00E67A67 /* Deletable.swift */; };
+		DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E41DE7363E00E67A67 /* Updatable.swift */; };
+		DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E61DE7363E00E67A67 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873CEC514ED0D5B140FFCF99 /* Pods-ActiveRecordFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveRecordFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		8DDC7A3345B45BD89A8FA075 /* Pods-ActiveRecordFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveRecordFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActiveRecordFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA85B4C81DE7362900E67A67 /* ActiveRecordFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveRecordFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA85B4CD1DE7362900E67A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,15 @@
 		DA85B4D21DE7362900E67A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA85B4D51DE7362900E67A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA85B4D71DE7362900E67A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA85B4DD1DE7363E00E67A67 /* FIRDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataModel.swift; sourceTree = "<group>"; };
+		DA85B4DE1DE7363E00E67A67 /* ModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		DA85B4DF1DE7363E00E67A67 /* Uploadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploadable.swift; sourceTree = "<group>"; };
+		DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
+		DA85B4E11DE7363E00E67A67 /* Readeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readeable.swift; sourceTree = "<group>"; };
+		DA85B4E21DE7363E00E67A67 /* Writeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Writeable.swift; sourceTree = "<group>"; };
+		DA85B4E31DE7363E00E67A67 /* Deletable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
+		DA85B4E41DE7363E00E67A67 /* Updatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		DA85B4E61DE7363E00E67A67 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E41FE785BFD897AF10FEEC8 /* Pods_ActiveRecordFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0144909FC3BD56209BD63B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10496BA4314D22A3B8439E1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				873CEC514ED0D5B140FFCF99 /* Pods-ActiveRecordFirebase.debug.xcconfig */,
+				8DDC7A3345B45BD89A8FA075 /* Pods-ActiveRecordFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA85B4BF1DE7362900E67A67 = {
 			isa = PBXGroup;
 			children = (
 				DA85B4CA1DE7362900E67A67 /* ActiveRecordFirebase */,
 				DA85B4C91DE7362900E67A67 /* Products */,
+				10496BA4314D22A3B8439E1B /* Pods */,
+				0144909FC3BD56209BD63B24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +96,8 @@
 		DA85B4CA1DE7362900E67A67 /* ActiveRecordFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				DA85B4F11DE7364600E67A67 /* Protocols */,
+				DA85B4E61DE7363E00E67A67 /* Extensions.swift */,
 				DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */,
 				DA85B4CD1DE7362900E67A67 /* ViewController.swift */,
 				DA85B4CF1DE7362900E67A67 /* Main.storyboard */,
@@ -64,6 +108,21 @@
 			path = ActiveRecordFirebase;
 			sourceTree = "<group>";
 		};
+		DA85B4F11DE7364600E67A67 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DA85B4E11DE7363E00E67A67 /* Readeable.swift */,
+				DA85B4E21DE7363E00E67A67 /* Writeable.swift */,
+				DA85B4E31DE7363E00E67A67 /* Deletable.swift */,
+				DA85B4E41DE7363E00E67A67 /* Updatable.swift */,
+				DA85B4DD1DE7363E00E67A67 /* FIRDataModel.swift */,
+				DA85B4DE1DE7363E00E67A67 /* ModelType.swift */,
+				DA85B4DF1DE7363E00E67A67 /* Uploadable.swift */,
+				DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA85B4DA1DE7362900E67A67 /* Build configuration list for PBXNativeTarget "ActiveRecordFirebase" */;
 			buildPhases = (
+				8837E2E7388DD6C27DCCD210 /* [CP] Check Pods Manifest.lock */,
 				DA85B4C41DE7362900E67A67 /* Sources */,
 				DA85B4C51DE7362900E67A67 /* Frameworks */,
 				DA85B4C61DE7362900E67A67 /* Resources */,
+				A6085B55A98075FD0FDD4117 /* [CP] Embed Pods Frameworks */,
+				A2F9C606CE1B4A918B970C53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +194,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8837E2E7388DD6C27DCCD210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2F9C606CE1B4A918B970C53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6085B55A98075FD0FDD4117 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA85B4C41DE7362900E67A67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA85B4E91DE7363E00E67A67 /* Uploadable.swift in Sources */,
+				DA85B4EC1DE7363E00E67A67 /* Writeable.swift in Sources */,
+				DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */,
 				DA85B4CE1DE7362900E67A67 /* ViewController.swift in Sources */,
+				DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */,
+				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,
+				DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */,
+				DA85B4EB1DE7363E00E67A67 /* Readeable.swift in Sources */,
+				DA85B4E71DE7363E00E67A67 /* FIRDataModel.swift in Sources */,
 				DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */,
+				DA85B4ED1DE7363E00E67A67 /* Deletable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +378,7 @@
 		};
 		DA85B4DB1DE7362900E67A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873CEC514ED0D5B140FFCF99 /* Pods-ActiveRecordFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9XL5HW2NB;
@@ -272,6 +392,7 @@
 		};
 		DA85B4DC1DE7362900E67A67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDC7A3345B45BD89A8FA075 /* Pods-ActiveRecordFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9XL5HW2NB;
