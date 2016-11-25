@@ -24,6 +24,7 @@
 		DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4E61DE7363E00E67A67 /* Extensions.swift */; };
 		DA948EFE1DE7899400C49EEF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA948EFD1DE7899400C49EEF /* User.swift */; };
 		DA948F031DE78A2800C49EEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA948F021DE78A2800C49EEF /* GoogleService-Info.plist */; };
+		DAC9E2411DE85DAD00C34613 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9E2401DE85DAD00C34613 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DA85B4E61DE7363E00E67A67 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DA948EFD1DE7899400C49EEF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA948F021DE78A2800C49EEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAC9E2401DE85DAD00C34613 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				DA85B4F11DE7364600E67A67 /* Protocols */,
 				DA948EFD1DE7899400C49EEF /* User.swift */,
+				DAC9E2401DE85DAD00C34613 /* AuthService.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				DA85B4CE1DE7362900E67A67 /* ViewController.swift in Sources */,
 				DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */,
 				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,
+				DAC9E2411DE85DAD00C34613 /* AuthService.swift in Sources */,
 				DA85B4F01DE7363E00E67A67 /* Extensions.swift in Sources */,
 				DA85B4EB1DE7363E00E67A67 /* Readeable.swift in Sources */,
 				DA948EFE1DE7899400C49EEF /* User.swift in Sources */,

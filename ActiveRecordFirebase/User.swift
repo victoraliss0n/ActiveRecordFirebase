@@ -11,24 +11,32 @@ import Firebase
 
 class User: FIRDataModel, Uploadable {
     
-    //Values
-    @objc private (set) var name: String
-    @objc private (set) var urlImage: String
-
-    //Keys
-    private (set) static var nameKey = #keyPath(User.name)
-    private (set) static var urlImageKey = #keyPath(User.urlImage)
     
-    
-    required init(json: NSDictionary) {
-        name = json[User.nameKey] as! String
-        urlImage = json[User.urlImageKey] as! String
-    }
+    @objc var name: String!
+    @objc var password: String!
     
     
     func toAnyObject() -> [String : AnyObject] {
-        return [User.nameKey: name as AnyObject, User.urlImageKey: urlImage as AnyObject]
+        return getJSON()
     }
     
+    func getJSON() -> [String: AnyObject]{
+        //Reflection.
+        let keyPaths = [#keyPath(User.name), #keyPath(User.password)]
+        let mirror = Mirror(reflecting: self)
+        
+        let properties = mirror.children.filter( {child in
+            return keyPaths.contains(child.label!)
+        })
+        
+        var json: [String : AnyObject] = [:]
+        
+        for child in properties {
+            json[child.label!] = child.value as AnyObject?
+        }
+        
+        return json
+    }
     
 }
+

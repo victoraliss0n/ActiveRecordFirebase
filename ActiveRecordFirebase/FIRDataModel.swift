@@ -9,8 +9,6 @@ import Firebase
 protocol FIRDataModel: ModelType {
     
     typealias Reference = FIRDatabaseReference
-    
-    init(json: NSDictionary)
     func toAnyObject() -> [String: AnyObject]
     
 }
@@ -20,6 +18,12 @@ extension FIRDataModel {
     
     func save(completion: @escaping (_ error: Error?) -> Void) {
         Self.reference.child(Self.className).child(Self.autoId).setValue(self.toAnyObject()) { (error, reference) in
+            completion(error)
+        }
+    }
+    
+    func save(id: String, completion: @escaping (_ error: Error?) -> Void){
+        Self.reference.child(Self.className).child(id).setValue(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }

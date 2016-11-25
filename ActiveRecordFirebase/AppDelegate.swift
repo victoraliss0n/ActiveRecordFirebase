@@ -22,7 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ///How to use it - Examples...
         
         ///Save
-        let user = User(json: [User.nameKey: "Alisson", User.urlImageKey: "testeURL"])
+        let user = User()
+        
+        user.name = "Victor"
+        user.password = "492093029302"
         
         user.save { (error) in
             
