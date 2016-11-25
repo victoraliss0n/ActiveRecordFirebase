@@ -16,26 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         FIRApp.configure()
         
         ///How to use it - Examples...
         
         ///Save
-        //        let user = User(json: ["name": "Alisson", "urlImage": "testeURL"])
+        let user = User(json: [User.nameKey: "Alisson", User.urlImageKey: "testeURL"])
         
-        //        user.save { (error) in
-        //          bloco...
-        //        }
+        user.save { (error) in
+            
+        }
         
         ///Remove
-        //        user.destroy(path: "-KXMk7hKgNnma1CwNcpl", completion: { (error) in
+    //  user.destroy(path: "-KXMk7hKgNnma1CwNcpl", completion: { (error) in
         //            bloco...
-        //        })
+    
+        //})
         
         ///Update
-        //        user.update(id: "-KXMo2bgDomzBFFuyrAi", completion: { error in
-        //            //bloco...
-        //        })
+//       user.update(id: "-KXMo2bgDomzBFFuyrAi", completion: { error in
+//            //bloco...
+//       })
         
         ///All
         User.asyncAll { (json) in

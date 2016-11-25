@@ -8,7 +8,6 @@ import Foundation
 protocol ModelType: ActiveRecord {
     
     associatedtype Reference
-    
     static var reference: Self.Reference { get }
     
 }
