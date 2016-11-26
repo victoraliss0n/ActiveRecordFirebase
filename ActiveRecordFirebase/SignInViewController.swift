@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SCLAlertView
 class SignInViewController: UIViewController {
 
     let authService = AuthService()
@@ -25,14 +25,16 @@ class SignInViewController: UIViewController {
         }
         authService.signIn(email: email, password: password)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func forgotPassword(_ sender: Any) {
+       
+        let scl = SCLAlertView()
+        let email = scl.addTextField("Digite seu email")
+        
+        scl.showInfo("Resetar senha", subTitle: "Um email será enviado dentro de instantes").setDismissBlock {
+            self.authService.resetPassword(email: email.text!)
+        }
+        
+       
     }
-    */
 
 }

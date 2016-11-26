@@ -62,6 +62,18 @@ class AuthService {
         })
     }
     
+    func resetPassword(email: String){
+        
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
+            if error != nil {
+                return
+            }
+            else {
+                SVProgressHUD.showSuccess(withStatus: "Um email foi enviado.")
+            }
+        })
+    }
+    
     fileprivate func getInstanceRootViewController() -> UIViewController? {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.window?.rootViewController
