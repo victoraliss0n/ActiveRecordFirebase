@@ -33,8 +33,6 @@ class CadastroViewController: UIViewController {
         }
         
     }
-    
-
 
     @IBAction func back(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

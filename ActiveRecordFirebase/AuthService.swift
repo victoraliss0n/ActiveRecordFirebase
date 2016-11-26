@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 import SVProgressHUD
 
+
 class AuthService {
  
     
@@ -43,6 +44,22 @@ class AuthService {
                 SVProgressHUD.dismiss()
             }
         }
+    }
+    
+    func signIn(email: String, password: String) {
+        
+        SVProgressHUD.show(withStatus: "Autenticando...")
+        
+        FIRAuth.auth()?.signIn(withEmail: email, password: password , completion: { (user, error) in
+            if error != nil {
+                SVProgressHUD.showError(withStatus: "Usuário inexiste")
+                return
+            }
+            else {
+                SVProgressHUD.showSuccess(withStatus: "Usuário Autenticado")
+                SVProgressHUD.dismiss()
+            }
+        })
     }
     
     fileprivate func getInstanceRootViewController() -> UIViewController? {

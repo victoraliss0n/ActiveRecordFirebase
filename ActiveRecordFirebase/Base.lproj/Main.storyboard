@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActiveRecordFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="ActiveRecordFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -53,6 +53,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVe-x3-zN4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDb-wU-hFK">
                                 <rect key="frame" x="14" y="629" width="132" height="30"/>
@@ -99,6 +102,10 @@
                             <constraint firstAttribute="trailing" secondItem="JAY-NZ-8Gs" secondAttribute="trailing" constant="1" id="zAz-M4-AgL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ife-hE-ggj" id="ztg-mU-RC4"/>
+                        <outlet property="passwordTextField" destination="IpS-m2-ip0" id="U87-ko-WbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,9 +164,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-L0-jIi">
-                                <rect key="frame" x="57" y="112" width="262" height="178"/>
+                                <rect key="frame" x="57" y="112" width="262" height="194"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="178" id="Rup-by-mAO"/>
+                                    <constraint firstAttribute="height" constant="194" id="vyn-dI-5aO"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -169,16 +176,17 @@
                             <constraint firstItem="wqP-4F-Krj" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="6wR-nC-nvy"/>
                             <constraint firstItem="eQD-yL-Bje" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="6z9-X4-SFc"/>
                             <constraint firstItem="eQD-yL-Bje" firstAttribute="top" secondItem="wqP-4F-Krj" secondAttribute="bottom" constant="24" id="99R-eg-0Gr"/>
+                            <constraint firstItem="7oq-L0-jIi" firstAttribute="top" secondItem="wOt-DU-lKn" secondAttribute="bottom" constant="48" id="Jta-in-fs7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="akE-md-vaS" secondAttribute="trailing" constant="40" id="Kpl-bY-n0p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7oq-L0-jIi" secondAttribute="trailing" constant="40" id="NYy-E0-Vs7"/>
                             <constraint firstItem="akE-md-vaS" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="VRm-fl-uSJ"/>
-                            <constraint firstItem="akE-md-vaS" firstAttribute="top" secondItem="7oq-L0-jIi" secondAttribute="bottom" constant="93" id="Vpt-f2-Bsc"/>
-                            <constraint firstItem="7oq-L0-jIi" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="WMc-Lw-s50"/>
+                            <constraint firstItem="V1a-SG-BSS" firstAttribute="top" secondItem="8zs-Mu-aUs" secondAttribute="bottom" constant="67" id="WBt-7s-XPd"/>
                             <constraint firstItem="8zs-Mu-aUs" firstAttribute="top" secondItem="eQD-yL-Bje" secondAttribute="bottom" constant="41" id="dtM-vi-i4E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eQD-yL-Bje" secondAttribute="trailing" constant="40" id="hwa-RR-zxE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8zs-Mu-aUs" secondAttribute="trailing" constant="40" id="iqN-bS-JL8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7oq-L0-jIi" secondAttribute="trailing" constant="40" id="kQC-Vj-l0c"/>
                             <constraint firstItem="8zs-Mu-aUs" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="kVe-ed-kq9"/>
-                            <constraint firstItem="7oq-L0-jIi" firstAttribute="top" secondItem="wOt-DU-lKn" secondAttribute="bottom" constant="48" id="qDs-Oq-TRs"/>
+                            <constraint firstItem="7oq-L0-jIi" firstAttribute="leading" secondItem="H6d-hG-cGq" secondAttribute="leadingMargin" constant="41" id="nXc-PY-U6K"/>
+                            <constraint firstItem="akE-md-vaS" firstAttribute="top" secondItem="7oq-L0-jIi" secondAttribute="bottom" constant="77" id="p6x-VQ-RIx"/>
                             <constraint firstItem="wqP-4F-Krj" firstAttribute="top" secondItem="akE-md-vaS" secondAttribute="bottom" constant="21" id="yf2-dC-ENx"/>
                         </constraints>
                     </view>

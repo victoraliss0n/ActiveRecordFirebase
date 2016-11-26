@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E41FE785BFD897AF10FEEC8 /* Pods_ActiveRecordFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */; };
+		DA019F551DE93A4F00407A39 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F541DE93A4F00407A39 /* SignInViewController.swift */; };
 		DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */; };
-		DA85B4CE1DE7362900E67A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CD1DE7362900E67A67 /* ViewController.swift */; };
 		DA85B4D11DE7362900E67A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4CF1DE7362900E67A67 /* Main.storyboard */; };
 		DA85B4D31DE7362900E67A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D21DE7362900E67A67 /* Assets.xcassets */; };
 		DA85B4D61DE7362900E67A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D41DE7362900E67A67 /* LaunchScreen.storyboard */; };
@@ -32,9 +32,9 @@
 		873CEC514ED0D5B140FFCF99 /* Pods-ActiveRecordFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveRecordFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		8DDC7A3345B45BD89A8FA075 /* Pods-ActiveRecordFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveRecordFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActiveRecordFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA019F541DE93A4F00407A39 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DA85B4C81DE7362900E67A67 /* ActiveRecordFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveRecordFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA85B4CD1DE7362900E67A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA85B4D01DE7362900E67A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA85B4D21DE7362900E67A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA85B4D51DE7362900E67A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 		DA948F011DE789AE00C49EEF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DA85B4CD1DE7362900E67A67 /* ViewController.swift */,
 				DAC9E2601DE8D82500C34613 /* CadastroViewController.swift */,
+				DA019F541DE93A4F00407A39 /* SignInViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -284,10 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA019F551DE93A4F00407A39 /* SignInViewController.swift in Sources */,
 				DA85B4E91DE7363E00E67A67 /* Uploadable.swift in Sources */,
 				DA85B4EC1DE7363E00E67A67 /* Writeable.swift in Sources */,
 				DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */,
-				DA85B4CE1DE7362900E67A67 /* ViewController.swift in Sources */,
 				DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */,
 				DAC9E2611DE8D82500C34613 /* CadastroViewController.swift in Sources */,
 				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,
