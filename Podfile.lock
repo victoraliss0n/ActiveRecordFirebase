@@ -46,6 +46,8 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
+  - IQKeyboardManager (4.0.7)
+  - SCLAlertView (0.7.0)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
@@ -53,6 +55,8 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
+  - IQKeyboardManager (~> 4.0)
+  - SCLAlertView (~> 0.7)
   - SVProgressHUD (~> 2.0)
 
 SPEC CHECKSUMS:
@@ -67,8 +71,10 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: d2069372b9b1b65fddada93f47c5241e7dd8b3d0
+PODFILE CHECKSUM: ecbd42bf6fd02b99ba32eb512a6ace6b21e74de5
 
 COCOAPODS: 1.2.0.beta.1

@@ -36,6 +36,12 @@ extension FIRDataModel {
             completion(error)
         }
     }
+    
+    func update(completion: @escaping (Error?) -> Void) {
+        Self.reference.child(Self.className).child(Self.autoId).updateChildValues(self.toAnyObject()) { (error, reference) in
+            completion(error)
+        }
+    }
 }
 
 //Deletable
@@ -54,7 +60,9 @@ extension FIRDataModel {
         
         Self.reference.child(Self.className).observe(.value, with: { snapshot in
             DispatchQueue.main.async {
-                completion((snapshot.value as! [String : AnyObject]?)!)
+                if snapshot.exists() {
+                    completion((snapshot.value as! [String : AnyObject]?)!)
+                }
             }
         })
     }

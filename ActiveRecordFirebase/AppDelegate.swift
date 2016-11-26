@@ -18,31 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         FIRApp.configure()
-        
-        ///How to use it - Examples...
-        
-        ///Save
-        let user = User()
-        
-        user.name = "Victor"
-        user.password = "492093029302"
-        
-        user.save { (error) in
-            
-        }
-        
-        ///Remove
-    //  user.destroy(path: "-KXMk7hKgNnma1CwNcpl", completion: { (error) in
-        //            bloco...
-    
-        //})
-        
-        ///Update
-//       user.update(id: "-KXMo2bgDomzBFFuyrAi", completion: { error in
-//            //bloco...
-//       })
-        
-        ///All
         User.asyncAll { (json) in
             print(json)
         }

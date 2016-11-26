@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ActiveRecordFirebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,17 +42,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13501BCB161B53BB5B75F12CCF056F13</key>
+		<key>244EFFBD2495DFBDD253DD11AA2291E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AC819453AC98E3D9CECE3B8C76D47EB</key>
+		<key>5A6A98F2ACCA5E8F502B0C6E309F22E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD865EE6808AB65A354D4A387FD1CAFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C36CB2CB977A4E7D954935096D00A1ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
