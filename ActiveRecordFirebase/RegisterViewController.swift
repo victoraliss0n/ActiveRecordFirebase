@@ -8,7 +8,7 @@
 
 import UIKit
 import SVProgressHUD
-class CadastroViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -25,6 +25,7 @@ class CadastroViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text else {
             return
         }
+        
         if password != confirmPassword {
             SVProgressHUD.showError(withStatus: "Confirme corretamente sua senha")
         }

@@ -25,6 +25,7 @@ class SignInViewController: UIViewController {
         }
         authService.signIn(email: email, password: password)
     }
+    
     @IBAction func forgotPassword(_ sender: Any) {
        
         let scl = SCLAlertView()

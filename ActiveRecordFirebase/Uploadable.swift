@@ -9,6 +9,7 @@ import FirebaseAuth
 protocol Uploadable {
     
     static func upload<T: FIRDataModel>(data: Data, entity: T, completion: @escaping (_ url: String) -> Void)
+    
 }
 
 extension Uploadable {
