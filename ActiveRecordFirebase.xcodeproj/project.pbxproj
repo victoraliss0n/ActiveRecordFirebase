@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		8E41FE785BFD897AF10FEEC8 /* Pods_ActiveRecordFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */; };
 		DA019F551DE93A4F00407A39 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F541DE93A4F00407A39 /* SignInViewController.swift */; };
-		DA019F571DE9E32400407A39 /* CollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F561DE9E32400407A39 /* CollectionsTableViewController.swift */; };
-		DA019F591DE9E5AA00407A39 /* CollectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F581DE9E5AA00407A39 /* CollectionsTableViewCell.swift */; };
 		DA019F5D1DEA679F00407A39 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F5C1DEA679F00407A39 /* MusicViewController.swift */; };
+		DA019F5F1DEB3F9300407A39 /* MusicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F5E1DEB3F9300407A39 /* MusicsTableViewController.swift */; };
+		DA019F611DEB420E00407A39 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F601DEB420E00407A39 /* MusicTableViewCell.swift */; };
+		DA019F631DEB426F00407A39 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA019F621DEB426F00407A39 /* Music.swift */; };
+		DA0FC9641DEB44CE00432EBE /* PathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9631DEB44CE00432EBE /* PathsManager.swift */; };
+		DA0FC9661DEB529700432EBE /* Typeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9651DEB529700432EBE /* Typeable.swift */; };
+		DA0FC9691DEB610A00432EBE /* UserMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9681DEB610A00432EBE /* UserMusic.swift */; };
 		DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */; };
 		DA85B4D11DE7362900E67A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4CF1DE7362900E67A67 /* Main.storyboard */; };
 		DA85B4D31DE7362900E67A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D21DE7362900E67A67 /* Assets.xcassets */; };
@@ -36,9 +40,13 @@
 		8DDC7A3345B45BD89A8FA075 /* Pods-ActiveRecordFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActiveRecordFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActiveRecordFirebase/Pods-ActiveRecordFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		AB2DD6C74F290E2B4BC7F4B4 /* Pods_ActiveRecordFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActiveRecordFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA019F541DE93A4F00407A39 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		DA019F561DE9E32400407A39 /* CollectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsTableViewController.swift; sourceTree = "<group>"; };
-		DA019F581DE9E5AA00407A39 /* CollectionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsTableViewCell.swift; sourceTree = "<group>"; };
 		DA019F5C1DEA679F00407A39 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		DA019F5E1DEB3F9300407A39 /* MusicsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicsTableViewController.swift; sourceTree = "<group>"; };
+		DA019F601DEB420E00407A39 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		DA019F621DEB426F00407A39 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		DA0FC9631DEB44CE00432EBE /* PathsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsManager.swift; sourceTree = "<group>"; };
+		DA0FC9651DEB529700432EBE /* Typeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typeable.swift; sourceTree = "<group>"; };
+		DA0FC9681DEB610A00432EBE /* UserMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMusic.swift; sourceTree = "<group>"; };
 		DA85B4C81DE7362900E67A67 /* ActiveRecordFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveRecordFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA85B4D01DE7362900E67A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +97,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA0FC9671DEB53D500432EBE /* ModelsFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				DA019F621DEB426F00407A39 /* Music.swift */,
+				DA948EFD1DE7899400C49EEF /* User.swift */,
+				DA0FC9681DEB610A00432EBE /* UserMusic.swift */,
+			);
+			name = ModelsFirebase;
+			sourceTree = "<group>";
+		};
 		DA85B4BF1DE7362900E67A67 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +152,7 @@
 				DA85B4DE1DE7363E00E67A67 /* ModelType.swift */,
 				DA85B4DF1DE7363E00E67A67 /* Uploadable.swift */,
 				DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */,
+				DA0FC9651DEB529700432EBE /* Typeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -141,8 +160,9 @@
 		DA948EFF1DE7899E00C49EEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA0FC9671DEB53D500432EBE /* ModelsFirebase */,
 				DA85B4F11DE7364600E67A67 /* Protocols */,
-				DA948EFD1DE7899400C49EEF /* User.swift */,
+				DA0FC9631DEB44CE00432EBE /* PathsManager.swift */,
 				DAC9E2401DE85DAD00C34613 /* AuthService.swift */,
 			);
 			name = Models;
@@ -152,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				DA85B4E61DE7363E00E67A67 /* Extension.swift */,
-				DA019F581DE9E5AA00407A39 /* CollectionsTableViewCell.swift */,
+				DA019F601DEB420E00407A39 /* MusicTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -162,8 +182,8 @@
 			children = (
 				DAC9E2601DE8D82500C34613 /* RegisterViewController.swift */,
 				DA019F541DE93A4F00407A39 /* SignInViewController.swift */,
-				DA019F561DE9E32400407A39 /* CollectionsTableViewController.swift */,
 				DA019F5C1DEA679F00407A39 /* MusicViewController.swift */,
+				DA019F5E1DEB3F9300407A39 /* MusicsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +225,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = L9XL5HW2NB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -298,18 +323,22 @@
 				DA85B4EC1DE7363E00E67A67 /* Writeable.swift in Sources */,
 				DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */,
 				DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */,
+				DA019F631DEB426F00407A39 /* Music.swift in Sources */,
+				DA019F5F1DEB3F9300407A39 /* MusicsTableViewController.swift in Sources */,
 				DAC9E2611DE8D82500C34613 /* RegisterViewController.swift in Sources */,
 				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,
 				DAC9E2411DE85DAD00C34613 /* AuthService.swift in Sources */,
 				DA85B4F01DE7363E00E67A67 /* Extension.swift in Sources */,
-				DA019F571DE9E32400407A39 /* CollectionsTableViewController.swift in Sources */,
+				DA0FC9641DEB44CE00432EBE /* PathsManager.swift in Sources */,
+				DA0FC9691DEB610A00432EBE /* UserMusic.swift in Sources */,
 				DA85B4EB1DE7363E00E67A67 /* Readeable.swift in Sources */,
 				DA019F5D1DEA679F00407A39 /* MusicViewController.swift in Sources */,
-				DA019F591DE9E5AA00407A39 /* CollectionsTableViewCell.swift in Sources */,
 				DA948EFE1DE7899400C49EEF /* User.swift in Sources */,
 				DA85B4E71DE7363E00E67A67 /* FIRDataModel.swift in Sources */,
 				DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */,
+				DA019F611DEB420E00407A39 /* MusicTableViewCell.swift in Sources */,
 				DA85B4ED1DE7363E00E67A67 /* Deletable.swift in Sources */,
+				DA0FC9661DEB529700432EBE /* Typeable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

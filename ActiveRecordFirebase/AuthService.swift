@@ -26,7 +26,7 @@ class AuthService {
                 firUser.email = email
                 firUser.password = password
                 
-                firUser.save(id: (user?.uid)!, completion: {(error) in
+                firUser.save(path: (user?.uid)!, completion: {(error) in
                     
                     if error != nil {
                         print(error?.localizedDescription as Any)
@@ -56,8 +56,9 @@ class AuthService {
                 return
             }
             else {
-                SVProgressHUD.showSuccess(withStatus: "Usuário Autenticado")
+                let vc = self.getInstanceRootViewController()?.storyboard?.instantiateViewController(withIdentifier: "nav")
                 SVProgressHUD.dismiss()
+                self.getInstanceRootViewController()?.present(vc!, animated: true, completion: nil)
             }
         })
     }

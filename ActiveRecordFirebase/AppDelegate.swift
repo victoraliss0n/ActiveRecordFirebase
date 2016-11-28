@@ -16,11 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         FIRApp.configure()
-        User.asyncAll { (json) in
-            print(json)
-        }
+        
         return true
         
     }

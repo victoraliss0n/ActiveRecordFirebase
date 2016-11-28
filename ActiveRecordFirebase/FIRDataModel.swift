@@ -22,8 +22,8 @@ extension FIRDataModel {
         }
     }
     
-    func save(id: String, completion: @escaping (_ error: Error?) -> Void){
-        Self.reference.child(Self.className).child(id).setValue(self.toAnyObject()) { (error, reference) in
+    func save(path: String, completion: @escaping (_ error: Error?) -> Void){
+        Self.reference.child(Self.className).child(path).setValue(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }
@@ -31,17 +31,17 @@ extension FIRDataModel {
 
 extension FIRDataModel {
     
-    func update(id: String, completion: @escaping (_ error: Error?) -> Void) {
-        Self.reference.child(Self.className).child(id).updateChildValues(self.toAnyObject()) { (error, reference) in
+    func update(path: String, completion: @escaping (_ error: Error?) -> Void) {
+        Self.reference.child(Self.className).child(path).updateChildValues(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }
-    
     func update(completion: @escaping (Error?) -> Void) {
         Self.reference.child(Self.className).child(Self.autoId).updateChildValues(self.toAnyObject()) { (error, reference) in
             completion(error)
         }
     }
+    
 }
 
 //Deletable
@@ -66,6 +66,16 @@ extension FIRDataModel {
             }
         })
     }
+    static func asyncAll(path: String, completion: @escaping (_ json: JSON) -> Void) {
+        
+        Self.reference.child(Self.className).child(path).observe(.value, with: { snapshot in
+            DispatchQueue.main.async {
+                if snapshot.exists() {
+                    completion((snapshot.value as! [String : AnyObject]?)!)
+                }
+            }
+        })
+    }
 }
 
 
@@ -81,6 +91,9 @@ extension FIRDataModel {
     
     static var autoId: String {
         return Self.reference.childByAutoId().key
+    }
+    static var modelID: String {
+        return Self.reference.child(Self.className).childByAutoId().key
     }
 }
 
