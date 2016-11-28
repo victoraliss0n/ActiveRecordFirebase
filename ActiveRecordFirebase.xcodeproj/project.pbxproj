@@ -16,6 +16,7 @@
 		DA0FC9641DEB44CE00432EBE /* PathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9631DEB44CE00432EBE /* PathsManager.swift */; };
 		DA0FC9661DEB529700432EBE /* Typeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9651DEB529700432EBE /* Typeable.swift */; };
 		DA0FC9691DEB610A00432EBE /* UserMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FC9681DEB610A00432EBE /* UserMusic.swift */; };
+		DA2FD1161DEBDDF200C48426 /* ConfigurableJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FD1151DEBDDF200C48426 /* ConfigurableJSON.swift */; };
 		DA85B4CC1DE7362900E67A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */; };
 		DA85B4D11DE7362900E67A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4CF1DE7362900E67A67 /* Main.storyboard */; };
 		DA85B4D31DE7362900E67A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA85B4D21DE7362900E67A67 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		DA0FC9631DEB44CE00432EBE /* PathsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsManager.swift; sourceTree = "<group>"; };
 		DA0FC9651DEB529700432EBE /* Typeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typeable.swift; sourceTree = "<group>"; };
 		DA0FC9681DEB610A00432EBE /* UserMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMusic.swift; sourceTree = "<group>"; };
+		DA2FD1151DEBDDF200C48426 /* ConfigurableJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableJSON.swift; sourceTree = "<group>"; };
 		DA85B4C81DE7362900E67A67 /* ActiveRecordFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActiveRecordFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA85B4CB1DE7362900E67A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA85B4D01DE7362900E67A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				DA85B4DF1DE7363E00E67A67 /* Uploadable.swift */,
 				DA85B4E01DE7363E00E67A67 /* ActiveRecord.swift */,
 				DA0FC9651DEB529700432EBE /* Typeable.swift */,
+				DA2FD1151DEBDDF200C48426 /* ConfigurableJSON.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				DA85B4EE1DE7363E00E67A67 /* Updatable.swift in Sources */,
 				DA85B4EA1DE7363E00E67A67 /* ActiveRecord.swift in Sources */,
 				DA019F631DEB426F00407A39 /* Music.swift in Sources */,
+				DA2FD1161DEBDDF200C48426 /* ConfigurableJSON.swift in Sources */,
 				DA019F5F1DEB3F9300407A39 /* MusicsTableViewController.swift in Sources */,
 				DAC9E2611DE8D82500C34613 /* RegisterViewController.swift in Sources */,
 				DA85B4E81DE7363E00E67A67 /* ModelType.swift in Sources */,

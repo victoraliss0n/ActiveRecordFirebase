@@ -1,19 +1,19 @@
 //
-//  PathsManager.swift
-//  ActiveRecordFirebase
-//
-//  Created by Victor Alisson on 27/11/16.
+//  Configurable.swift
+
+//  Created by Victor Alisson on 28/11/16.
 //  Copyright © 2016 Victor Alisson. All rights reserved.
 //
 
 import Foundation
 
-//Será delada mais a frente
-class PathsManager {
-    
-    static let shared = PathsManager()
-    
+protocol ConfigurableJSON {
     typealias JSON = [String: AnyObject]
+    func configureJSON(keyPaths: [String], type: Typeable) -> JSON
+    func configureRelantionshipJSON(type: Typeable) -> JSON
+    
+}
+extension ConfigurableJSON {
     
     func configureJSON(keyPaths: [String], type: Typeable) -> JSON {
         
@@ -37,5 +37,5 @@ class PathsManager {
         }
         return json
     }
-
 }
+
