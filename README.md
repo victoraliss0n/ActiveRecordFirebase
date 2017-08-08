@@ -1,2 +1,5 @@
-# ActiveRecordFirebase
-Swift ActiveRecord-inspired model for Firebase. Still in development.
+# FireRecord
+An ActiveRecord architecture above coreData written in Swift. 
+
+
+PS: We are still in the early phase of the project
